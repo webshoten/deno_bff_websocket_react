@@ -1,0 +1,13 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "dev": "DENO_BUNDLE_NO_CHECK=1 deno run --allow-net --allow-read --allow-write --allow-run --allow-env --unstable-kv src/dev.ts",
+    "build": "deno run --allow-read --allow-write --allow-run --allow-env src/build.ts"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["deno.ns", "DOM", "DOM.Iterable", "ESNext"]
+  }
+}

@@ -2,7 +2,6 @@
 .deno/
 
 # IDE
-.vscode/
 .idea/
 
 # OS

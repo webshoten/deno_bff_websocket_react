@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "request": "launch",
+            "name": "Deno: 開発モード（ファイル監視付き）",
+            "type": "node",
+            "program": "${workspaceFolder}/src/dev.ts",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "DENO_BUNDLE_NO_CHECK": "1"
+            },
+            "runtimeExecutable": "deno",
+            "runtimeArgs": [
+                "run",
+                "--inspect-brk",
+                "--allow-net",
+                "--allow-read",
+                "--allow-write",
+                "--allow-run",
+                "--allow-env",
+                "--unstable-kv"
+            ],
+            "attachSimplePort": 9229,
+            "console": "integratedTerminal"
+        }
+    ]
+}
